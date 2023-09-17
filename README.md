@@ -1,0 +1,1 @@
+Backend of the disaster management project(SIH1440) for Smart India Hackathon, built by team Daksha.
