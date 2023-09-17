@@ -23,3 +23,6 @@ class User(UserBase):
     middle_name: str | None = None
     dob: str | None = None
 
+    class Config:
+        orm_mode: True
+
