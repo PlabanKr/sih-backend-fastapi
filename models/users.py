@@ -24,5 +24,5 @@ class User(UserBase):
     dob: str | None = None
 
     class Config:
-        orm_mode: True
+        orm_mode = True
 
