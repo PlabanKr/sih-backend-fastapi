@@ -4,7 +4,10 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
 # env variables
-from ..main import get_settings
+#from ..server import get_settings
+#settings = get_settings()
+#from ..server import settings
+from ..config import get_settings
 settings = get_settings()
 
 # database credentails

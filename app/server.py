@@ -1,10 +1,9 @@
 # import libraries
 from fastapi import FastAPI
-from functools import lru_cache
 
 # import config file
 from . import config
-#import db models
+# import db models
 from .models import users_db
 # import db utils
 from .database.db import SessionLocal, engine
@@ -25,9 +24,7 @@ def get_db():
         db.close()
 
 # environment variables
-@lru_cache()
-def get_settings():
-    return config.Settings()
+settings = config.get_settings()
 
 # root route to check server status
 @app.get("/")

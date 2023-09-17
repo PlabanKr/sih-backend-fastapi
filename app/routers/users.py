@@ -3,7 +3,7 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
 # import database local sesssion
-from ..main import get_db
+from ..server import get_db
 # import crud functions
 from ..database.crud import get_all_users
 # import db models and pydantic models
